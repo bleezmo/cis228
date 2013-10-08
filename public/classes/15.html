@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forms</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="../../css/base.css">
+</head>
+<body>
+
+  <h1>HTML Forms</h1>
+
+  <h2>Exam 2</h2>
+  <p>
+    In class, 4/25 (<a href="../exams/fall12-exam2.pdf" title="fall12-exam2.pdf">practice exam</a>).  
+    Print your <strong>summary.html</strong> page in class 4/23 and bring it with you to the exam. <br>
+    How to study:
+  </p>
+  <ol>
+     <li>read the text,</li>
+     <li>complete the labs,</li>
+     <li>take the practice exam,</li>
+     <li>complete and style your <strong>summary.html</strong> page, and</li>
+     <li>review the <em>Bullet Points</em> sections of the text.</li>
+  </ol>
+  
+  <h2>Tools</h2>
+  <p>
+    HTML to PDF translator:
+    <a href="http://www.princexml.com/download/" title="prince">Prince 8.0</a> download
+    or <a href="http://pdfcrowd.com/#convert_by_url" title="online converter">online converter</a>.
+  </p>
+
+  <h2>Lab 14</h2>
+
+  <h3>The Head First Contest</h3>
+     <ol>
+         <li>Fill out the <a href="../code/chapter14/contestForm.html" title="contest form">contest form</a> and enter the contest.</li>
+         <li>View the source for the contest form with your browser.</li>
+         <li>View the <a href="../code/chapter14/contest.php" title="contest.php">server code</a> used to process contest entries.
+     </ol>
+
+  <h3>The Bean Machine</h3>
+  <ol>
+    <li>Create a <code>LAB14</code> sub-directory of you <code>LABS</code> directory.</li>
+    <li>Down and unzip <a href="../code/chapter14/LAB14.zip" title="Lab 14">LAB14.zip</a> in that sub-directory.</li>
+    <li>
+      Follow the instructions in the text to complete the <code>Starbuzz Bean Machine</code> order form.
+      In <strong>form.html</strong> in the <code>starbuzz</code> directory:
+      <ul>
+        <li>
+          Create a form element with <code>action</code> attribute <q>http://www.starbuzzcoffee.com/processorder.php</q> 
+          and <code>method</code> attribute <q>POST</q>.
+        </li>
+        <li>Add <code>text input</code> elements for the name and address controls.</li>
+        <li>Add <code>tel input</code> and <code>submit input</code> elements for phone number and order controls.</li>
+        <li>Create a drop-down menu to choose a blend of coffee.</li>
+        <li>Add <code>radio input</code> elements to choose between <q>whole</q> and <q>ground</q>.</li>
+        <li>Add a Boolean <code>checked</code> attribute to the <q>ground</q> radio button.</li>
+        <li>Add <code>number input</code> and <code>date input</code> elements to get amount and arrival date controls.</li>
+        <li>Add <code>checkbox input</code> elements for <q>Extras</q>.</li>
+        <li>Add a <code>textarea</code> element for comments.</li>
+      </ul>
+    </li>
+    <li>Style this form as directed in the text.</li>
+    <li>
+      Edit the <strong>index.html</strong> file in your <code>LABS</code> directory to have a link
+      to the <strong>form.html</strong> page in the <code>starbuzz</code> sub-directory of your <code>LAB14</code> directory.
+    </li>
+    <li>Examine and understand the <strong>styledform.html</strong> and <strong>styledform.css</strong> files.</li>
+    <li>Examine and understand the <strong>accessform.html</strong> and <strong>accessform.css</strong> files.</li>
+  </ol>
+
+  <h3><q>Pocket</q> Calculator</h3>
+  <ol>
+    <li>Edit the <strong>calculator.html</strong> page you created in the last lab.</li>
+    <li>
+          Wrap the <code>table</code> element with the opening and closing tags of a <code>form</code> element.
+          (This <q>form</q> won't need <code>action</code> or <code>method</code> attributes.)
+    </li>
+    <li>In the cell comprising the first row of the table,
+       put a <code>text input</code> element with <code>id</code> attribute <q>display</q>.
+    </li>
+    <li>Convert the remaining cells in the table to <code>button input</code> elements with appropriate <code>value</code> attributes.</li>
+    <li>View the source of <a href="../code/calc.js" title="calculator code">calc.js</a> in a browser</li>
+    <li>Save this file in your <code>PROJECT</code> directory.</li>
+    <li>
+      Attach this file to your <strong>calculator.html</strong> page:
+      in the <code>head</code> element add a <code>script</code> element with no content.
+      In the opening tag of this element, set the <code>src</code> attribute to be the path to your <strong>calc.js</strong> file.
+    <li>
+      Make a working calculator by adding <code>onclick</code> attributes to each of the <code>td</code> elements that represent calulator keys.
+      The value of these attributes should be a call to the appropriate function defined in <strong>calc.js</strong>.
+    </li>
+    <li><em>Warning</em>: if your calculator does not work, the problem might be a bug in my JavaScript code.</li>
+  </ol>
+
+  <p><strong>Always turn off your computer and screen before leaving the room.</strong></p>
+</body>
+</html>

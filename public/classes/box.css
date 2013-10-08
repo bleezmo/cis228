@@ -1,0 +1,67 @@
+body {
+    background-color: silver ;
+    font-size: large ;
+    padding: 10em ;
+}
+
+blockquote {
+    background-color: red ;
+    padding: 0px ;
+    border:  black 2px solid ;
+    margin:  0px ;
+}
+
+p {
+    background-color: blue ;
+}
+
+#NoNoNo {
+    /* padding: 2em ; */
+    /* border:  white 2em solid ; */
+    /* margin:  2em ; */
+}
+
+#YesNoNo {
+       padding: 2em ;
+    /* border:  white 2em solid ; */
+    /* margin:  2em ; */
+}
+
+
+#NoYesNo {
+    /* padding: 2em ; */
+       border:  white 2em solid ;
+    /* margin:  2em ; */
+}
+
+#YesYesNo {
+       padding: 2em ;
+       border:  white 2em solid ;
+    /* margin:  2em ; */
+}
+
+#NoNoYes {
+    /* padding: 2em ; */
+    /* border:  white 2em solid ; */
+       margin:  2em ;
+}
+
+#YesNoYes {
+       padding: 2em ;
+    /* border:  white 2em solid ; */
+       margin:  2em ;
+}
+
+
+#NoYesYes {
+    /* padding: 2em ; */
+       border:  white 2em solid ;
+       margin:  2em ;
+}
+
+#YesYesYes {
+       padding: 2em ;
+       border:  white 2em solid ;
+       margin:  2em ;
+}
+

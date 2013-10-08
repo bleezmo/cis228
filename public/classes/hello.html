@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>My First Web Page</title>
+<script>
+window.onload = init;
+
+function init () {
+  var name = prompt("Who Are You?");
+  var greeting = "Hi "+name;
+  var p = document.getElementById("message");
+  p.innerHTML=greeting;
+}
+</script>
+</head>
+<body>
+  <p id="message">Hello World!</p>
+</body>
+</html>
