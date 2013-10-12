@@ -9,8 +9,8 @@ object Application extends Controller {
     Ok(views.html.index())
   }
 
-  def temp = Action {
-  	Ok(views.html.temp())
+  def notes = Action {
+  	Ok(views.html.notes())
   }
   
 }
