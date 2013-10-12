@@ -1,0 +1,49 @@
+Objectives for CIS 228, The Internet
+
+A) Use of HyperText Markup Language (HTML) to specify document structure:
+
+   1) HTML basics: tags and character entities; elements: block and inline elements,
+      lists and list items, images, dev and span elements, the Document Object Model (DOM).
+
+   2) Hyperlinks: the a element, href and (img) src attributes, domain names, URL's,
+      relative and absolute paths.
+
+   3) HTML attributes, attribute assignment syntax, id and class attributes.
+
+   4) Tables.
+
+   5) Forms.
+
+B) Use of Cascading Style Sheets (CSS) to specify document presentation:
+
+   6) Foreground/background: color (color notations), background images.
+   
+   7) Text: font properties, decoration and alignment, line-height.
+
+   8) Element framing: margin, border, and padding properties.
+
+   9) Element positioning: float and clear properties; absolute, fixed, and relative positioning.
+
+  10) The selector calculus: element, id, class, and pseudo-class selectors;
+      compond selectors; the decendant-of ( ), child-of (>), and after (+) operators;
+      the cascade and specificity.
+
+C) Use of JavaScript (JS) to specify document behavior:
+
+  11) JS basics: values and types, simple variables, assignment statements, 
+      conditional statements (if-then-else), repetative statements (while loops).
+
+  12) Associative arrays: key-value pairs, syntax, creation, conventional arrays, for loops.
+
+  13) Functions: declaration, named and anonymous, parameters, the function body,
+      the return statement, side-effects; application, argument evaluation, pass-by-value,
+      function evaluation, statement and expression contexts; functions as values.
+
+  14) Objects: objects as associative arrays, dot notation, methods, 
+      constructors and object creation, inheritance.
+
+  15) Web page integration: events and handlers (e.g., onclick and onload), 
+      the document object, its getElementById() and createElement() methods,
+      the innerHTML property and appendChild() method of elements, 
+      the value property of input elements.
+      
