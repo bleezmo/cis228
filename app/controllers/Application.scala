@@ -12,5 +12,11 @@ object Application extends Controller {
   def notes = Action {
   	Ok(views.html.notes())
   }
+
+  def assignments(assignment:Int) = Action {
+  	if(assignment == 0) Ok(views.html.assignments());
+  	else if(assignment == 1) Ok(views.html.assignment1());
+  	else NotFound;
+  }
   
 }

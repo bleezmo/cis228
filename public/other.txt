@@ -1,0 +1,3 @@
+things to do at end of semester:
+
+@media queries in hfhtmlcss p. 400
