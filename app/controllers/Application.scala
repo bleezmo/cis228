@@ -18,5 +18,9 @@ object Application extends Controller {
   	else if(assignment == 1) Ok(views.html.assignment1());
   	else NotFound;
   }
+
+  def websiteinstr = Action{
+    Ok(views.html.website_instr());
+  }
   
 }

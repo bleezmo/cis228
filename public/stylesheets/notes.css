@@ -25,6 +25,12 @@
 	border-color: #0000ff;
 	margin: 0px 0px 30px 0px;
 }
+.solid-border-blue-rounded{
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #0000ff;
+}
 .linearBg2 {
 /* IE10 Consumer Preview */ 
 background-image: -ms-linear-gradient(top, #FFFFFF 0%, #00A3EF 100%);
@@ -43,4 +49,25 @@ background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #00A3EF 100%);
 
 /* W3C Markup, IE10 Release Preview */ 
 background-image: linear-gradient(to bottom, #FF0000 0%, #0000FF 100%);
+}
+.birdhair{
+	width: 500px;
+	height: 500px;
+	background-image: url(http://huagl.net/wp-content/uploads/2012/06/birdcage.jpg);
+}
+.manatee{
+	width: 495px;
+	height: 390px;
+	background-image: url(../images/manatee.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+.manatee-cropped{
+	width: 200px;
+	height: 200px;
+	background-image: url(../images/manatee.jpg);
+}
+#centered-text p{
+	color: gray;
+	text-align: center;
 }
