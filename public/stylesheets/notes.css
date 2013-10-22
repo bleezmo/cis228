@@ -75,3 +75,19 @@ background-image: linear-gradient(to bottom, #FF0000 0%, #0000FF 100%);
 	color: gray;
 	text-align: center;
 }
+.murloc{
+	color: blue;
+}
+.king{
+	color: red;
+}
+.plink a:link{
+	color: green;
+}
+.plink a:visited{
+	color: red;
+}
+.plink a:hover{
+	color: yellow;
+};
+
