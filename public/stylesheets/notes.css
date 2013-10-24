@@ -81,13 +81,52 @@ background-image: linear-gradient(to bottom, #FF0000 0%, #0000FF 100%);
 .king{
 	color: red;
 }
-.plink a:link{
+.alink a:link{
 	color: green;
 }
-.plink a:visited{
+.alink a:visited{
 	color: red;
 }
-.plink a:hover{
+.alink a:hover{
 	color: yellow;
-};
+}
+.phover p:hover{
+	color: green;
+}
+.div1{
+	border-style: solid;
+	border-width: 2px;
+	width: 300px;
+	margin: 5px;
+}
+.div2{
+	border-style: solid;
+	border-width: 2px;
+	width: 300px;
+	margin: 5px;
+	float: right;
+}
+.div3{
+	border-style: solid;
+	border-width: 2px;
+	width: 300px;
+	margin: 5px;
+	clear: right;
+}
+.div4{
+	border-style: solid;
+	border-width: 2px;
+	width: 300px;
+	margin: 5px;
+	float: right;
+}
+.centering{
+	border-style: solid;
+	border-width: 2px;
+	width: 300px;
+	margin: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
