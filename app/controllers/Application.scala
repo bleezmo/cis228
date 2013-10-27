@@ -16,6 +16,7 @@ object Application extends Controller {
   def assignments(assignment:Int) = Action {
   	if(assignment == 0) Ok(views.html.assignments());
   	//else if(assignment == 1) Ok(views.html.assignment1());
+    //else if(assignment == 2) Ok(views.html.assignment2());
   	else NotFound;
   }
 
