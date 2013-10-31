@@ -1,0 +1,40 @@
+.mytable th{
+	border-style: solid
+}
+.mytable td{
+	text-align: center;
+	border-style: solid;
+}
+table.mytable{
+	border-style: solid;
+}
+.cell1{
+	border-style: solid;
+	background-color: green;
+	width: 200px;
+	height: 200px;
+	display: table-cell;
+}
+.cell2{
+	background-color: blue;
+	border-style: solid;
+	width: 200px;
+	height: 200px;
+	display: table-cell;
+}
+.mytablecss{
+	display: table;
+}
+.mytr{
+	display: table-row;
+}
+.fixed_tardis{
+	position: fixed;
+	top: 200px;
+	left: 100px;
+}
+.absolute_tardis{
+	position: absolute;
+	top: 200px;
+	left: 400px;
+}

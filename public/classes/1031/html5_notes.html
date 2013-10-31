@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="1031_notes.css">
+</head>
+<body>
+	<a href="http://www.anthonycalzadilla.com/2010/08/html5-section-aside-header-nav-footer-elements-not-as-obvious-as-they-sound/">header, footer, section, aside</a>
+	<ul>
+		<li>
+			<code>section</code> – Used for grouping together thematically-related content. Sounds like a <code>div</code> element, but its not. The <code>div</code> has no semantic meaning. Before replacing all your <code>div’s</code> with section elements, always ask yourself, “Is all of the content related?”<br>
+		</li>
+		<li>
+			<code>aside</code> – Used for tangentially related content. Just because some content appears to the left or right of the main content isn’t enough reason to use the <code>aside</code> element. Ask yourself if the content within the <code>aside</code> can be removed without reducing the meaning of the main content. Pullquotes are an example of tangentially related content.
+		</li>
+		<li>
+			<code>header</code> – There is a crucial difference between the <code>header</code> element and the general accepted usage of <code>header</code> (or masthead). There’s usually only one <code>header</code> or ‘masthead’ in a page. In HTML5 you can have as many as you want. The spec defines it as “a group of introductory or navigational aids”. You can use a <code>header</code> in any <code>section</code> on your site. In fact, you probably should use a <code>header</code> within most of your <code>sections</code>. The spec describes the <code>section</code> element as “<em>a thematic grouping of content, typically with a heading.</em>”
+		</li>
+		<li>
+			<code>nav</code> – Intended for major navigation information. A group of links grouped together isn’t enough reason to use the <code>nav</code> element. Site-wide navigation, on the other hand belongs in a <code>nav</code> element.
+		</li>
+		<li>
+			<code>footer</code> – Sounds like its a description of the position, but its not. <code>Footer</code> elements contain information about it’s containing element: who wrote it, copyright, links to related content, etc. Whereas we usually have one <code>footer</code> for an entire document, HTML5 allows us to also have <code>footer</code> within sections.
+		</li>
+	</ul>
+
+</body>
+</html>
