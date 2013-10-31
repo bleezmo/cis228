@@ -8,6 +8,17 @@
 table.mytable{
 	border-style: solid;
 }
+.mytable2 th{
+	border-style: solid
+}
+.mytable2 td{
+	text-align: center;
+	border-style: solid;
+}
+table.mytable2{
+	border-style: solid;
+	border-collapse: collapse;
+}
 .cell1{
 	border-style: solid;
 	background-color: green;
