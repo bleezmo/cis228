@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			.container{
+				position: relative;
+				background-color: gray;
+				width: 800px;
+				height: 2000px;
+				margin-left: 200px;
+				margin-right: 200px;	
+				margin-bottom: 400px;
+			}
+			.spaceship{
+				position: fixed;
+				background-color: green;
+				width: 16px;
+				height: 30px;
+				top: 100px;
+				left: 608px;
+			}
+			.block{
+				position: absolute;
+				background-color: purple;
+				width: 15px;
+				height: 30px;	
+			}
+			#b1{
+				top: 400px;
+				left: 200px;	
+			}
+			#b2{
+				top: 600px;
+				right: 200px;	
+			}
+			#b3{
+				top: 1500px;
+				left: 100px;	
+			}
+			#b4{
+				top: 500px;
+				right: 300px;	
+			}
+			.station{
+				position: absolute;
+				display: table;
+				border-style: solid;
+				border-color: black;
+				border-width: 2px;
+				border-collapse: collapse;
+				top: 1900px;
+				left: 398px;
+			}
+			.station-row{
+				display: table-row;
+				border-style: solid;
+				border-color: black;
+				border-width: 2px;
+			}
+			.landing-cell{
+				background-color: white;
+				display: table-cell;
+				width: 16px;
+				height: 30px;
+				border-style: solid;
+				border-color: black;
+				border-width: 2px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Assignment 3</h1>
+		<div class="container">	
+			<div class="spaceship"></div>
+			<div class="block" id="b1"></div>
+			<div class="block" id="b2"></div>
+			<div class="block" id="b3"></div>
+			<div class="block" id="b4"></div>
+			<div class="station">
+				<div class="station-row">
+					<div class="landing-cell"></div>
+					<div class="landing-cell"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
