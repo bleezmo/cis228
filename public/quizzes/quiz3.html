@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<body>
+	<ol>
+		<li>
+			What is the output in the console for the following code?<br/>
+			<pre>
+				function sayhi(){
+					return "hello";
+				}
+				var namehi = {
+					execute: function(){
+						return sayhi()+" josh";
+					}
+				}	
+				console.log(namehi.execute());
+			</pre>
+		</li>
+		<li>
+			What is the output in the console for the following code?<br/>
+			<pre>
+				for(var i = 0; i &lt; 10; i++){
+					console.log(i);
+				}
+			</pre>
+		</li>
+		<li>
+			What is the output in the console for the following code?<br/>
+			<pre>
+				for(var i = 0; i &lt; 10; i++){
+					if(i == 4){
+						console.log("got a 4!");
+					}else if(i &lt; 4){
+						console.log("less than 4")
+					}
+					if(i == 3){
+						console.log("got a 3!");
+					}
+				}
+			</pre>
+		</li>
+		<li>
+			What is the output in the console for the following code?<br/>
+			<pre>
+				var arr = [1,2,3];
+				console.log(arr[1]);
+			</pre>	
+		</li>
+		<li>
+			What is the output in the console for the following code?<br/>
+			<pre>
+				var obj = {
+					x: "hello",
+					y: "world"
+				}
+				function add(y,z){
+					return z + y;
+				}
+				console.log(add(obj.x,obj.y))
+			</pre>
+		</li>
+		<li>
+			What is the output in the console for the following code?<br/>
+			<pre>
+				function Dog(color,name){
+					this.color = color;
+					this.name = name;
+					this.bark = function(){
+						return this.name+" says woof!"
+					}
+				}
+				var dog1 = new Dog("blue", "fred");
+				var dog2 = new Dog("brown", "bob");
+				console.log("the color of "+dog1.name+" is "+dog1.color);
+				console.log(dog2.bark())
+			</pre>
+		</li>
+	</ol>
+</body>
+</html>
