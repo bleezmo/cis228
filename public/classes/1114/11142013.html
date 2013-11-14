@@ -1,19 +1,14 @@
 <!doctype html>
 <html>
 <head>
-	<script type="text/javascript">
-		function init(){
-			var mydiv = document.getElementById("mydiv")
-			var attrStyle = mydiv.getAttribute("style")
-			var ptag = document.createElement("P")
-			ptag.innerHTML = "hello world";
-			mydiv.appendChild(ptag);
-			attrStyle = "color: black";
-		}
-		window.onload = init
-	</script>
+	<script type="text/javascript" src="11142013.js"></script>
 </head>
 <body>
-	<div id="mydiv" style="color: green;">blergl merlg</div>
+	<div id="mydiv"></div>
+	<button onclick="changeToBlue()">Change To Blue</button><br/>
+	<input type="text" id="mytext">
+	<button id="addp" onclick="addText()">Add Text</button><br/>
+	<button onclick="changeToGreen()">Change To Green</button><br/>
+	<button onclick="execute()">Execute text as function</button>
 </body>
 </html>
