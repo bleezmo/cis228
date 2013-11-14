@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript">
+		function init(){
+			var mydiv = document.getElementById("mydiv")
+			var attrStyle = mydiv.getAttribute("style")
+			var ptag = document.createElement("P")
+			ptag.innerHTML = "hello world";
+			mydiv.appendChild(ptag);
+			attrStyle = "color: black";
+		}
+		window.onload = init
+	</script>
+</head>
+<body>
+	<div id="mydiv" style="color: green;">blergl merlg</div>
+</body>
+</html>
