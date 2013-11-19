@@ -7,6 +7,8 @@ GET     /                           controllers.Application.index
 GET		/notes						controllers.Application.notes
 GET		/assignments				controllers.Application.assignments(assignment:Int ?= 0)
 GET		/websiteinstr				controllers.Application.websiteinstr
+GET     /api/name                   controllers.Application.getName
+POST    /api/name                   controllers.Application.setName
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
