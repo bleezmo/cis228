@@ -37,6 +37,9 @@ object Application extends Controller {
   def getName() = Action{
     Ok(name)
   }
+  def getNameJson() = Action{
+    Ok(Json.obj("name" -> name))
+  }
   def setName = Action{ implicit request =>
     name = userForm.bindFromRequest().get.name
     println("got name: "+name);
