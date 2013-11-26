@@ -5,11 +5,12 @@
 		function init(){
 			var btn = document.getElementById("mybtn")
 			btn.innerHTML = "hello world"
+			document.body.innerHTML = document.body.innerHTML+"<p>More text</p>"
 		}
-		window.onload = init
+		//window.onload = init
 	</script>
 </head>
 <body>
-	<button id="mybtn">blergl mergl</button>
+	<button id="mybtn" onclick="init()">blergl mergl</button>
 </body>
 </html>
