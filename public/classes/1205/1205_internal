@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript" src="http://localhost:9090/assets/classes/1121/getName_internal.js"></script>
+	<script type="text/javascript">
+		function init(){
+			var request = new XMLHttpRequest();
+			request.open("GET", "/api/name")
+			request.onload = function(){
+				if(request.status == 200){
+					document.getElementById("ptag").innerHTML = "My name is: "+request.responseText
+				}
+			}
+			request.send();
+		}
+		function init2(){
+			function onNameResponse(name){
+					var obj = JSON.parse(request.responseText)
+					document.getElementById("ptag").innerHTML = "My name is: "+name
+			}
+			getName(onNameResponse)
+		}
+		function init3(){
+			function createCORSRequest(method, url) {
+			  var xhr = new XMLHttpRequest();
+			  if ("withCredentials" in xhr) {
+			    // Check if the XMLHttpRequest object has a "withCredentials" property.
+			    // "withCredentials" only exists on XMLHTTPRequest2 objects.
+			    xhr.open(method, url, false);
+
+			  } else if (typeof XDomainRequest != "undefined") {
+
+			    // Otherwise, check if XDomainRequest.
+			    // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+			    xhr = new XDomainRequest();
+			    xhr.open(method, url);
+
+			  } else {
+
+			    // Otherwise, CORS is not supported by the browser.
+			    xhr = null;
+
+			  }
+			  return xhr;
+			}
+
+			var xhr = createCORSRequest('GET', "http://localhost:9090/api/name");
+			if (!xhr) {
+			  throw new Error('CORS not supported');
+			}
+			xhr.send();
+			document.getElementById("ptag").innerHTML = "My name is: "+xhr.responseText
+		}
+		window.onload = init;
+	</script>
+</head>
+<body>
+	<p id="ptag"></p>
+	<form action='/api/name' method="post" target="_blank">
+		<input type="text" name="name">
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
