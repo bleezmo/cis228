@@ -85,7 +85,7 @@
 				<td>December 12</td>
 			</tr>
 			<tr>
-				<td>Assignment 5</td>
+				<td><a href="#a5">Assignment 5</a></td>
 				<td>December 9</td>
 				<td>December 21</td>
 			</tr>
@@ -145,5 +145,43 @@
 		<p>The text on the button changes to 'Look behind you.' When you click the button, the button disappears and text is again added that says: </p>
 		<blockquote><i>The creature appears. It is to late.</i></blockquote>
 	</div>
+	<h2 id="a5">Assignment 5</h2>
+	<hr/>
+	<p>This program will allow you to click on a map and get the distance between that point and the ietf headquarters</p
+	<ol>
+		<li>
+			<p>First follow the google maps api instructions to initialize a map. Sample code can be seen <a href="https://developers.google.com/maps/documentation/javascript/tutorial#The_Hello_World_of_Google_Maps_v3">here</a>. Below is a screenshot</p>
+			<img src="/assets/images/assign5pt1.jpg" height="300"/>
+		</li>
+		<li>
+			<p>When the map is clicked on you will be able to get the latitude/longitude of the location clicked via the 'mouseup' event listener. For example:</p>
+			<pre>google.maps.event.addListener(map, 'mouseup', 
+				function(pt){
+					//add code here
+				});
+			</pre>
+			<p>Where 'map' is the maps object you created in the first part, 'mouseup' is the event, and 'function(pt)...' is the event handler passed in.</p>
+			<p>You can find the documentation for event listeners <a href="https://developers.google.com/maps/documentation/javascript/reference#event">here</a>.</p>
+		</li>
+		<li>
+			<p>Within the 'mouseup' event handler (the 'add code here' part), you will manipulate the dom so that two pieces of information show up to the right of the map.</p>
+			<ol>
+				<li>The latitude and longitude of the mouse point clicked</li>
+				<li>The distance from that location clicked to the IETF headquarters</li>
+			</ol>
+			<p>You can get the distance from the IETF headquarters in two different ways.</p>
+			<ol>
+				<li>(Not preferred way)Find the location of the IETF headquarters and use the haversine distance formula to calculate the distance between two points</li>
+				<li>
+					<p>(preferred way)Use an AJAX request to http://cis228.herokuapp.com/api/ietf/distance to get the distance as the response.</p>
+					<p>For example, If you wanted to calculate the distance between the ietf headquarters and the location (in lat/long) (40.979027939585436, -73.89541625976562) the request url would be 'http://cis228.herokuapp.com/api/ietf/distance?lat=40.979027939585436&amp;lon=-73.89541625976562' (you can try it out in your browser)</p>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<p>The end result should look something like this:</p>
+			<img src="/assets/images/assign5pt2.jpg" height="300" />
+		</li>
+	</ol>
 </body>
 </html>
