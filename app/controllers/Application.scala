@@ -28,7 +28,7 @@ object Application extends Controller {
     else if(assignment == 2) Ok(views.html.assignment2());
     else if(assignment == 3) Ok(views.html.assignment3());
     //else if(assignment == 4) Ok(views.html.assignment4());
-    else if(assignment == 5) Ok(views.html.assignment5());
+    //else if(assignment == 5) Ok(views.html.assignment5());
   	else NotFound;
   }
 
@@ -47,8 +47,16 @@ object Application extends Controller {
     Ok(views.html.form_received_name(name))
   }
 
-  def calculateDistance(lat:String, lon:String) = Action{
+  def calculateDistance(lat:Double, lon:Double) = Action{
     //calculate distance from lattitude: 37.467399,longitude: -121.93344
-    Ok
+    val Radius = 3959  //in miles
+    val dlat = Math.toRadians(lat - 37.467399)
+    val dlon = Math.toRadians(lon + 121.93344)
+    val lat2 = Math.toRadians(lat)
+    val lat1 = Math.toRadians(37.4673399)
+    val a = Math.pow(Math.sin(dlat/2),2)+(Math.pow(Math.sin(dlon/2),2)*Math.cos(lat1)*Math.cos(lat2))
+    val c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a))
+    val distance = Radius*c
+    Ok(distance.toString)
   }
 }
