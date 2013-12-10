@@ -28,6 +28,7 @@ object Application extends Controller {
     else if(assignment == 2) Ok(views.html.assignment2());
     else if(assignment == 3) Ok(views.html.assignment3());
     //else if(assignment == 4) Ok(views.html.assignment4());
+    else if(assignment == 5) Ok(views.html.assignment5());
   	else NotFound;
   }
 
@@ -45,5 +46,9 @@ object Application extends Controller {
     println("got name: "+name);
     Ok(views.html.form_received_name(name))
   }
-  
+
+  def calculateDistance(lat:String, lon:String) = Action{
+    //calculate distance from lattitude: 37.467399,longitude: -121.93344
+    Ok
+  }
 }
