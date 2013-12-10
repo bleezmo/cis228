@@ -6,14 +6,14 @@
 .manatee{
 	width: 495px;
 	height: 390px;
-	background-image: url(../images/manatee.jpg);
+	background-image: url(../../images/manatee.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom left;
 }
 .manatee-cropped{
 	width: 200px;
 	height: 200px;
-	background-image: url(../images/manatee.jpg);
+	background-image: url(../../images/manatee.jpg);
 }
 .solid-border-blue-rounded{
 	border-radius: 10px;
