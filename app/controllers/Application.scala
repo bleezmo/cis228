@@ -15,21 +15,30 @@ object Application extends Controller {
     )(UserData.apply)(UserData.unapply)
   )
   def index = Action {
-    Ok(views.html.index())
+    Ok(views.html.spring2014.index());
   }
 
-  def notes = Action {
-  	Ok(views.html.notes())
+  def notesFall2013 = Action {
+  	Ok(views.html.fall2013.notes());
   }
 
-  def assignments(assignment:Int) = Action {
-  	if(assignment == 0) Ok(views.html.assignments());
-  	else if(assignment == 1) Ok(views.html.assignment1());
-    else if(assignment == 2) Ok(views.html.assignment2());
-    else if(assignment == 3) Ok(views.html.assignment3());
-    else if(assignment == 4) Ok(views.html.assignment4());
-    //else if(assignment == 5) Ok(views.html.assignment5());
+  def notesSpring2014 = Action {
+    Ok(views.html.spring2014.notes());
+  }
+
+  def assignmentsFall2013(assignment:Int) = Action {
+  	if(assignment == 0) Ok(views.html.fall2013.assignments());
+  	//else if(assignment == 1) Ok(views.html.fall2013.assignment1());
+    //else if(assignment == 2) Ok(views.html.fall2013.assignment2());
+    //else if(assignment == 3) Ok(views.html.fall2013.assignment3());
+    //else if(assignment == 4) Ok(views.html.fall2013.assignment4());
+    //else if(assignment == 5) Ok(views.html.fall2013.assignment5());
   	else NotFound;
+  }
+
+  def assignmentsSpring2014(assignment: Int) = Action {
+    if(assignment == 0) Ok(views.html.spring2014.assignments());
+    else NotFound;
   }
 
   def websiteinstr = Action{

@@ -4,9 +4,17 @@
 
 # Home page
 GET     /                           controllers.Application.index
-GET		/notes						controllers.Application.notes
-GET		/assignments				controllers.Application.assignments(assignment:Int ?= 0)
+
+#Fall 2013
+GET		/fall2013/notes						controllers.Application.notesFall2013
+GET		/fall2013/assignments				controllers.Application.assignmentsFall2013(assignment:Int ?= 0)
+
+# Spring 2014
+GET		/spring2014/notes						controllers.Application.notesSpring2014
+GET		/spring2014/assignments				controllers.Application.assignmentsSpring2014(assignment:Int ?= 0)
+
 GET		/websiteinstr				controllers.Application.websiteinstr
+
 GET     /api/name                   controllers.Application.getName
 GET 	/api/json/name				controllers.Application.getNameJson
 POST    /api/name                   controllers.Application.setName
