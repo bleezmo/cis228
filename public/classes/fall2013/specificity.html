@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Class Notes</title>
+        <link rel="stylesheet" media="screen" href="/assets/stylesheets/specificity.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+        <script src="javascripts/jquery-1.9.0.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <p>This will be red</p>
+        blue overrides red
+        <p class="pblue">This will be blue</p>
+        green overrides blue and red
+        <p id="pgreen" class="pblue">This will be green</p>
+        style overrides all
+        <p id="pgreen" class="pblue" style="color: yellow">This will be yellow</p>
+    </body>
+</html>

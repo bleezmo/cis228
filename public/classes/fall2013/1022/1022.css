@@ -1,0 +1,9 @@
+.alink a:link{
+	color: green;
+}
+.alink a:visited{
+	color: red;
+}
+.alink a:hover{
+	color: yellow;
+}

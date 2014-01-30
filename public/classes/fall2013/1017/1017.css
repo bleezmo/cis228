@@ -1,0 +1,31 @@
+.birdhair{
+	width: 500px;
+	height: 500px;
+	background-image: url(http://huagl.net/wp-content/uploads/2012/06/birdcage.jpg);
+}
+.manatee{
+	width: 495px;
+	height: 390px;
+	background-image: url(../../images/manatee.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
+.manatee-cropped{
+	width: 200px;
+	height: 200px;
+	background-image: url(../../images/manatee.jpg);
+}
+.solid-border-blue-rounded{
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #0000ff;
+}
+.centered-text p{
+	color: gray;
+	text-align: center;
+}
+#centered-text p{
+	color: gray;
+	text-align: center;
+}
