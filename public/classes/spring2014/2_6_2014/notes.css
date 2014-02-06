@@ -1,0 +1,15 @@
+h1{
+	background-color: #FFE800
+}
+.textcolor{
+	color: orange;
+	font-size: 20px;
+}
+.underlinequote{
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: bold;
+}
+.specialfamily{
+	font-family: cursive;
+}
