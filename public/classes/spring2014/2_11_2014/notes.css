@@ -1,0 +1,7 @@
+@font-face{
+	font-family: "MyCrazyFont";
+	src: url("KBZipaDeeDooDah.ttf");
+}
+.someclass{
+	font-family: MyCrazyFont;
+}
