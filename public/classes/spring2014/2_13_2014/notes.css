@@ -1,0 +1,63 @@
+.myborder{
+	border-style: solid;
+	border-color: blue;
+	border-width: 2px;
+}
+.dashed-border{
+	border-style: dashed;
+	border-width: 2px;
+}
+.dotted-border{
+	border-style: dotted;
+	border-width: 2px;
+}
+.multi-border{
+	border-style: solid dotted dashed dotted;
+	border-width: 2px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.multi-border2{
+	border-top-style: solid;
+	border-right-style: dotted;
+	border-bottom-style: dashed;
+	border-left-style: dotted;
+	border-width: 2px 4px 5px 8px;
+	margin-top: 30px;
+	padding: 15px;
+}
+.rounded-border{
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+	padding: 15px;
+	display: inline-block;
+	border-radius: 15px;
+}
+.rounded-border-bg{
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+	padding: 15px;
+	display:inline-block;
+	border-radius: 15px;
+	background-color: cyan;
+}
+.rounded-border-bg-gradient-out{
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+	padding: 15px;
+	display:inline-block;
+	border-radius: 15px;
+	background: linear-gradient(#64A8D1, #0E51A7);
+}
+.rounded-border-bg-gradient-in{
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+	padding: 15px;
+	display:inline-block;
+	border-radius: 15px;
+	background: linear-gradient(#0E51A7, #64A8D1);
+}
