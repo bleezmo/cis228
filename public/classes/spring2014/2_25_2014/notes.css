@@ -1,0 +1,12 @@
+.someclass{
+	border-style: solid;
+	border-width: 2px;
+	margin-left: 50px;
+	padding-left: 50px;
+}
+a:visited{
+	color: green;
+}
+a.hoverclass:hover{
+	color: pink;
+}
