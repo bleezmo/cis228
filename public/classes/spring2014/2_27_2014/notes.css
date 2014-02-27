@@ -1,0 +1,21 @@
+.birdwitharms1{
+	width: 500px;
+	height: 319px;
+	border-style: solid;
+	border-width: 2px;
+	background-image: url("http://www.burdr.com/wp-content/uploads/2011/06/bird-with-arms-17.jpg");
+	float: right;
+}
+.regelem{
+	width: 200px;
+	height: 250px;
+	border-style: solid;
+	border-width: 2px;
+}
+.clearelem{
+	width: 200px;
+	height:260px;
+	border-style: solid;
+	border-width: 2px;
+	clear: right;
+}
