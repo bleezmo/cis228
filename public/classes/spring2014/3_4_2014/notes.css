@@ -1,0 +1,23 @@
+.shifted{
+	position: relative;
+	top: 100px;
+	left: 50%;
+}
+.absoluteimg{
+	position: absolute;
+	background-image: url("http://i.imgur.com/nReeKfm.jpg");
+	width: 420px;
+	height: 420px;
+	top: 0px;
+	left: 100px;
+	/*give the image low priority, so that Text 2 and 3 can placed above it*/
+	z-index: -1;
+}
+.fixedimg{
+	position: fixed;
+	background-image: url("http://www.fws.gov/mountain-prairie/species/mammals/lynx/lynx%20stand%20snow.jpg");
+	width: 300px;
+	height: 202px;
+	top: 0px;
+	left: 100px;
+}

@@ -19,3 +19,12 @@
 	border-width: 2px;
 	clear: right;
 }
+.centered{
+	background: url("http://cssnerd.com/wp-content/uploads/2012/09/Screen-Shot-2012-09-04-at-00.02.24-600x428.png");
+	background-size: 100px 100px;
+	width:100px;
+	height:100px;
+	background-repeat: no-repeat;
+	margin-left: auto;
+	margin-right: auto;
+}
