@@ -1,0 +1,52 @@
+/*if screen size is greater than or equal to 801px
+ then display this css*/
+@media screen and (min-device-width: 801px){
+	.container{
+		position: relative;
+		width: 500px;
+		height: 500px;
+		background-color: gray;
+		left: 200px;
+	}
+}
+/*if screen size is less than or equal to 800px then
+ display this css*/
+@media screen and (max-device-width: 800px){
+	.container{
+		position: relative;
+		width: 200px;
+		height: 200px;
+		background-color: gray;
+		left: 200px;
+	}
+}
+.car{
+	position: absolute;
+	background-color: red;
+	width: 100px;
+	height: 100px;
+	top: 100px;
+	left: 100px;
+}
+/*css table that takes up entire width of page*/
+.mytablecss{
+	display: table;
+	width: 100%;
+}
+/*css row of the table that takes up entire width of page*/
+.myrow{
+	display: table-row;
+	width: 100%;
+}
+/*css table cell within a row that takes up half the width of the page*/
+.cell1{
+	display: table-cell;
+	width: 50%;
+	background-color: green;
+}
+/*css table cell within a row that takes up half the width of the page*/
+.cell2{
+	display: table-cell;
+	width: 50%;	
+	background-color: yellow;
+}
