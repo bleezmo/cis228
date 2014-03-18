@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<script type="text/javascript">
+		var ghost = [
+			"The screen says, 'DO NOT LOOK BEHIND YOU'. You turn to look again",
+			"The screen now says, 'I warned you. You should have listened.' Now you hear an awful sound behind you",
+			"The creature appears. It is to late."
+		]
+		var btn = [
+			"Look back at the screen",
+			"Look behind you"
+		]
+		var count = 0;
+		function lookBack(){
+			var scaryText = document.getElementById("scaryText")
+			var scaryBtn = document.getElementById("scaryBtn")
+			var ptag = document.createElement("P")
+			ptag.innerHTML = ghost[count]
+			if(count < 2){
+				scaryBtn.innerHTML = btn[count]
+			}else{
+				scaryBtn.setAttribute("style","display: none")
+			}
+			scaryText.appendChild(ptag);
+			count++;
+		}
+	</script>
+</head>
+<body>
+	You are alone in a room.
+	You are staring at your blank computer screen.
+	Suddenly text appears. It says "Do not look behind you". You turn to look
+	<button id="scaryBtn" onclick="lookBack()">Look back at the screen</button>
+	<div id="scaryText"></div>
+</body>
+</html>
