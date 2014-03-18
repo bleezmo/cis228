@@ -39,8 +39,9 @@ object Application extends Controller {
   def assignmentsSpring2014(assignment: Int) = Action {
     if(assignment == 0) Ok(views.html.spring2014.assignments());
     else if(assignment == 1) Ok(views.html.spring2014.assignment1());
-    //else if(assignment == 2) Ok(views.html.spring2014.assignment2());
+    else if(assignment == 2) Ok(views.html.spring2014.assignment2());
     //else if(assignment == 3) Ok(views.html.spring2014.assignment3());
+    //else if(assignment == 4) Ok(views.html.spring2014.assignment4());
     else NotFound;
   }
 
