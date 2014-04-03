@@ -41,7 +41,8 @@ object Application extends Controller {
     else if(assignment == 1) Ok(views.html.spring2014.assignment1());
     else if(assignment == 2) Ok(views.html.spring2014.assignment2());
     else if(assignment == 3) Ok(views.html.spring2014.assignment3());
-    //else if(assignment == 4) Ok(views.html.spring2014.assignment4());
+    else if(assignment == 4) Ok(views.html.spring2014.assignment4());
+    //else if(assignment == 5) Ok(views.html.spring2014.assignment5());
     else NotFound;
   }
 
