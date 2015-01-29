@@ -15,7 +15,7 @@ object Application extends Controller {
     )(UserData.apply)(UserData.unapply)
   )
   def index = Action {
-    Ok(views.html.spring2014.index());
+    Ok(views.html.spring2015.index());
   }
 
   def notesFall2013 = Action {
@@ -24,6 +24,14 @@ object Application extends Controller {
 
   def notesSpring2014 = Action {
     Ok(views.html.spring2014.notes());
+  }
+  def notesSpring2015 = Action {
+    Ok(views.html.spring2015.notes());
+  }
+
+  def assignmentsSpring2015(assignment:Int) = Action {
+  	if(assignment == 0) Ok(views.html.spring2015.assignments());
+  	else NotFound;
   }
 
   def assignmentsFall2013(assignment:Int) = Action {
