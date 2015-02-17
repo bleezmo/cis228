@@ -1,0 +1,20 @@
+.centered{
+	text-align: center;
+}
+.makeblue{
+	color: hsla(143, 79%, 52%, 0.6);
+}
+.bgcolor{
+	background-color: blue;
+}
+.main>p{
+	color: rgba(87, 160, 8, 1);
+}
+/*This one is more specific then the previous,
+  so it overrides the previous color choice*/
+div.main>p{
+	color: rgba(132, 98, 6, 1);
+}
+#childdiv+p{
+	color: red;
+}
